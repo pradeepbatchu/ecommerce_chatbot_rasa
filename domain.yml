@@ -110,11 +110,11 @@ responses:
   - text: Good to see you! below are quick links for you
     buttons:
     - title: Shop By Categories
-      payload: /action_customer_product
+      payload: /action_categories_list
     - title: Show Products
       payload: /action_customer_product
     - title: Contact Us
-      payload: /action_customer_product
+      payload: /customer_contact
   utter_customer_contact:
   - text: You can reach us on (012)1290 678 or write to us on info@mystore.co.in
   utter_customer_bye:
@@ -209,9 +209,7 @@ responses:
 
 
 actions:
-  - action_greet
   - action_product
-  - action_store_location
   - action_default_fallback
   - action_feedback
   - action_categories_list

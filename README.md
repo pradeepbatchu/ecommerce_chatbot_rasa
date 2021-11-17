@@ -51,13 +51,13 @@ Response:
 	"text": "Good to see you! below are quick links for you",
 	"buttons": [{
 		"title": "Shop By Categories",
-		"payload": "\/action_customer_product"
+		"payload": "\/action_categories_list"
 	}, {
 		"title": "Show Products",
 		"payload": "\/action_customer_product"
 	}, {
 		"title": "Contact Us",
-		"payload": "\/action_customer_product"
+		"payload": "\/customer_contact"
 	}]
 }]
 
