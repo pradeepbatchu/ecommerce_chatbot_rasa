@@ -1,0 +1,66 @@
+version: "2.0"
+nlu:
+  - lookup: author_name
+    examples: |
+      - Suzanne Lang
+      - Jessie Burtun
+      - E John
+      - E L James
+      - Harper Lee
+      - Jeff Kenny
+      - Michael J. Fox
+      - Sir Richard Burton
+      - Ajay K Pandey
+      - K.J.Parker
+      - Workman Publishing
+      - Arthur R. Pell
+      - Matt Haig
+      - Sara O. Marberry
+      - Jane Austen
+      - Markus Zusak
+      - Arun Tiwari
+      - ArtzFolio
+      - Bruno Latour
+      - Hemanth
+      - Wendy MacNaughton
+      - Eugenia Vanina
+      - Barack Obama
+      - Barbara Schneider, Joseph Krajcik, Jari Lavonen
+      - E. B. White
+      - Anita Silvey
+      - Mortimer J. Adler
+      - J.R.R. Tolkien
+      - Markus Zusak
+      - Anne Frank
+      - Jane Austen
+      - J.R.R. Tolkien
+      - J.K. Rowling
+      - George Orwell
+      - Harper Lee
+      - Marronite
+      - Jim Henson
+      - Jane Jacobs
+      - John Grisham
+      - Barry Adams
+      - Mortimer J. Adler
+      - Brandon Stanton
+      - Ramachandra
+      - Jane Austen
+      - TestQA
+      - Jane Austen
+      - Charlie Mackesy
+      - Yale University Press
+      - Suzanne Lang
+      - Mark Walsh1
+      - DJ Sammy
+      - Samantha Dion Baker
+      - DK
+      - Steve Martin
+      - Lucy Maconnell
+      - Victor e Frankel
+      - Sudha Murty
+      - Eric V. Anslyn
+      - Roger Frost
+      - Jane clear
+      - G. Krishnan (Author)
+      - SG Owner

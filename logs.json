@@ -1,0 +1,166 @@
+2021-11-17 19:38:47,098 [DEBUG]  Available web server routes: 
+/conversations/<conversation_id:path>/messages     POST                           add_message
+/conversations/<conversation_id:path>/tracker/events POST                           append_events
+/webhooks/rasa                                     GET                            custom_webhook_RasaChatInput.health
+/webhooks/rasa/webhook                             POST                           custom_webhook_RasaChatInput.receive
+/model/test/intents                                POST                           evaluate_intents
+/model/test/stories                                POST                           evaluate_stories
+/conversations/<conversation_id:path>/execute      POST                           execute_action
+/domain                                            GET                            get_domain
+/socket.io                                         GET                            handle_request
+/                                                  GET                            hello
+/model                                             PUT                            load_model
+/model/parse                                       POST                           parse
+/conversations/<conversation_id:path>/predict      POST                           predict
+/conversations/<conversation_id:path>/tracker/events PUT                            replace_events
+/conversations/<conversation_id:path>/story        GET                            retrieve_story
+/conversations/<conversation_id:path>/tracker      GET                            retrieve_tracker
+/webhooks/socketio                                 GET                            socketio_webhook.health
+/status                                            GET                            status
+/model/predict                                     POST                           tracker_predict
+/model/train                                       POST                           train
+/conversations/<conversation_id:path>/trigger_intent POST                           trigger_intent
+/model                                             DELETE                         unload_model
+/version                                           GET                            version
+2021-11-17 19:38:47,101 [INFO ]  Starting Rasa server on http://localhost:5005
+2021-11-17 19:38:47,103 [DEBUG]  Using the default number of Sanic workers (1).
+2021-11-17 19:38:47,113 [INFO ]  Loading model models\20211117-193355.tar.gz...
+2021-11-17 19:38:54,330 [DEBUG]  Extracted model to 'C:\Users\prade\AppData\Local\Temp\tmp85jofipf'.
+2021-11-17 19:38:56,519 [DEBUG]  Starting new HTTPS connection (1): api.segment.io:443
+2021-11-17 19:38:58,193 [DEBUG]  https://api.segment.io:443 "POST /v1/track HTTP/1.1" 200 21
+2021-11-17 19:38:58,203 [INFO ]  Enabling coroutine debugging. Loop id 1484693246920.
+2021-11-17 19:38:58,206 [INFO ]  Loading model models\20211117-193355.tar.gz...
+2021-11-17 19:39:02,839 [DEBUG]  Extracted model to 'C:\Users\prade\AppData\Local\Temp\tmp8k6hioc2'.
+2021-11-17 19:39:15,762 [DEBUG]  Loading the model from C:\Users\prade\AppData\Local\Temp\tmp8k6hioc2\nlu\component_6_DIETClassifier.tf_model with finetune_mode=False...
+2021-11-17 19:39:17,409 [DEBUG]  Following metrics will be logged during training: 
+2021-11-17 19:39:17,411 [DEBUG]    t_loss (total loss)
+2021-11-17 19:39:17,414 [DEBUG]    i_acc (intent acc)
+2021-11-17 19:39:17,416 [DEBUG]    i_loss (intent loss)
+2021-11-17 19:39:17,419 [DEBUG]    e_f1 (entity f1)
+2021-11-17 19:39:17,424 [DEBUG]    e_loss (entity loss)
+2021-11-17 19:39:43,365 [DEBUG]  Finished loading the model.
+2021-11-17 19:39:43,469 [DEBUG]  Loading the model from C:\Users\prade\AppData\Local\Temp\tmp8k6hioc2\nlu\component_7_ResponseSelector.tf_model with finetune_mode=False...
+2021-11-17 19:39:43,729 [DEBUG]  Following metrics will be logged during training: 
+2021-11-17 19:39:43,730 [DEBUG]    t_loss (total loss)
+2021-11-17 19:39:43,732 [DEBUG]    r_acc (response acc)
+2021-11-17 19:39:43,733 [DEBUG]    r_loss (response loss)
+2021-11-17 19:39:50,124 [DEBUG]  Finished loading the model.
+2021-11-17 19:39:50,161 [DEBUG]  Connected to InMemoryTrackerStore.
+2021-11-17 19:39:50,161 [DEBUG]  Connected to lock store 'InMemoryLockStore'.
+2021-11-17 19:40:15,482 [DEBUG]  Extracted model to 'C:\Users\prade\AppData\Local\Temp\tmp4w5gl6lo'.
+2021-11-17 19:40:16,719 [DEBUG]  Loading the model from C:\Users\prade\AppData\Local\Temp\tmp4w5gl6lo\core\policy_0_TEDPolicy\ted_policy.tf_model with finetune_mode=False...
+2021-11-17 19:40:41,026 [DEBUG]  Finished loading the model.
+2021-11-17 19:40:42,007 [DEBUG]  Instantiated NLG to 'TemplatedNaturalLanguageGenerator'.
+2021-11-17 19:40:42,009 [INFO ]  Rasa server is up and running.
+2021-11-17 19:42:53,336 [ERROR]  Failed to fetch JWT public key from URL 'http://localhost:5005/api/version' with status code 404: <!DOCTYPE html><html lang=en><meta charset=UTF-8><title>⚠️ 404 — Not Found</title>
+<style>
+        html { font-family: sans-serif }
+        h2 { color: #888; }
+        .tb-wrapper p { margin: 0 }
+        .frame-border { margin: 1rem }
+        .frame-line > * { padding: 0.3rem 0.6rem }
+        .frame-line { margin-bottom: 0.3rem }
+        .frame-code { font-size: 16px; padding-left: 4ch }
+        .tb-wrapper { border: 1px solid #eee }
+        .tb-header { background: #eee; padding: 0.3rem; font-weight: bold }
+        .frame-descriptor { background: #e2eafb; font-size: 14px }
+    </style>
+<h1>⚠️ 404 — Not Found</h1><p>Requested URL /api/version not found
+
+2021-11-17 19:42:53,522 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/webhooks/rasa/webhook'
+Traceback (most recent call last):
+  File "C:\Users\prade\AppData\Roaming\Python\Python37\site-packages\sanic\app.py", line 931, in handle_request
+    response = await response
+  File "c:\users\prade\anaconda3\lib\site-packages\rasa\core\channels\rest.py", line 101, in receive
+    sender_id = await self._extract_sender(request)
+  File "c:\users\prade\anaconda3\lib\site-packages\rasa\core\channels\rasa_chat.py", line 97, in _extract_sender
+    jwt_payload = await self._decode_bearer_token(req.args.get("token"))
+  File "c:\users\prade\anaconda3\lib\site-packages\rasa\core\channels\rasa_chat.py", line 81, in _decode_bearer_token
+    bearer_token, self.jwt_key, self.jwt_algorithm
+  File "c:\users\prade\anaconda3\lib\site-packages\rasa\core\channels\channel.py", line 178, in decode_jwt
+    authorization_header_value = bearer_token.replace(BEARER_TOKEN_PREFIX, "")
+AttributeError: 'NoneType' object has no attribute 'replace'
+2021-11-17 19:43:28,246 [ERROR]  Failed to fetch JWT public key from URL 'http://localhost:5005/api/version' with status code 404: <!DOCTYPE html><html lang=en><meta charset=UTF-8><title>⚠️ 404 — Not Found</title>
+<style>
+        html { font-family: sans-serif }
+        h2 { color: #888; }
+        .tb-wrapper p { margin: 0 }
+        .frame-border { margin: 1rem }
+        .frame-line > * { padding: 0.3rem 0.6rem }
+        .frame-line { margin-bottom: 0.3rem }
+        .frame-code { font-size: 16px; padding-left: 4ch }
+        .tb-wrapper { border: 1px solid #eee }
+        .tb-header { background: #eee; padding: 0.3rem; font-weight: bold }
+        .frame-descriptor { background: #e2eafb; font-size: 14px }
+    </style>
+<h1>⚠️ 404 — Not Found</h1><p>Requested URL /api/version not found
+
+2021-11-17 19:43:28,247 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/webhooks/rasa/webhook'
+Traceback (most recent call last):
+  File "C:\Users\prade\AppData\Roaming\Python\Python37\site-packages\sanic\app.py", line 931, in handle_request
+    response = await response
+  File "c:\users\prade\anaconda3\lib\site-packages\rasa\core\channels\rest.py", line 101, in receive
+    sender_id = await self._extract_sender(request)
+  File "c:\users\prade\anaconda3\lib\site-packages\rasa\core\channels\rasa_chat.py", line 97, in _extract_sender
+    jwt_payload = await self._decode_bearer_token(req.args.get("token"))
+  File "c:\users\prade\anaconda3\lib\site-packages\rasa\core\channels\rasa_chat.py", line 81, in _decode_bearer_token
+    bearer_token, self.jwt_key, self.jwt_algorithm
+  File "c:\users\prade\anaconda3\lib\site-packages\rasa\core\channels\channel.py", line 178, in decode_jwt
+    authorization_header_value = bearer_token.replace(BEARER_TOKEN_PREFIX, "")
+AttributeError: 'NoneType' object has no attribute 'replace'
+2021-11-17 19:45:29,026 [ERROR]  Failed to fetch JWT public key from URL 'http://localhost:5005/api/version' with status code 404: <!DOCTYPE html><html lang=en><meta charset=UTF-8><title>⚠️ 404 — Not Found</title>
+<style>
+        html { font-family: sans-serif }
+        h2 { color: #888; }
+        .tb-wrapper p { margin: 0 }
+        .frame-border { margin: 1rem }
+        .frame-line > * { padding: 0.3rem 0.6rem }
+        .frame-line { margin-bottom: 0.3rem }
+        .frame-code { font-size: 16px; padding-left: 4ch }
+        .tb-wrapper { border: 1px solid #eee }
+        .tb-header { background: #eee; padding: 0.3rem; font-weight: bold }
+        .frame-descriptor { background: #e2eafb; font-size: 14px }
+    </style>
+<h1>⚠️ 404 — Not Found</h1><p>Requested URL /api/version not found
+
+2021-11-17 19:45:29,027 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/webhooks/rasa/webhook'
+Traceback (most recent call last):
+  File "C:\Users\prade\AppData\Roaming\Python\Python37\site-packages\sanic\app.py", line 931, in handle_request
+    response = await response
+  File "c:\users\prade\anaconda3\lib\site-packages\rasa\core\channels\rest.py", line 101, in receive
+    sender_id = await self._extract_sender(request)
+  File "c:\users\prade\anaconda3\lib\site-packages\rasa\core\channels\rasa_chat.py", line 97, in _extract_sender
+    jwt_payload = await self._decode_bearer_token(req.args.get("token"))
+  File "c:\users\prade\anaconda3\lib\site-packages\rasa\core\channels\rasa_chat.py", line 81, in _decode_bearer_token
+    bearer_token, self.jwt_key, self.jwt_algorithm
+  File "c:\users\prade\anaconda3\lib\site-packages\rasa\core\channels\channel.py", line 178, in decode_jwt
+    authorization_header_value = bearer_token.replace(BEARER_TOKEN_PREFIX, "")
+AttributeError: 'NoneType' object has no attribute 'replace'
+2021-11-17 19:45:37,186 [ERROR]  Failed to fetch JWT public key from URL 'http://localhost:5005/api/version' with status code 404: <!DOCTYPE html><html lang=en><meta charset=UTF-8><title>⚠️ 404 — Not Found</title>
+<style>
+        html { font-family: sans-serif }
+        h2 { color: #888; }
+        .tb-wrapper p { margin: 0 }
+        .frame-border { margin: 1rem }
+        .frame-line > * { padding: 0.3rem 0.6rem }
+        .frame-line { margin-bottom: 0.3rem }
+        .frame-code { font-size: 16px; padding-left: 4ch }
+        .tb-wrapper { border: 1px solid #eee }
+        .tb-header { background: #eee; padding: 0.3rem; font-weight: bold }
+        .frame-descriptor { background: #e2eafb; font-size: 14px }
+    </style>
+<h1>⚠️ 404 — Not Found</h1><p>Requested URL /api/version not found
+
+2021-11-17 19:45:37,187 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/webhooks/rasa/webhook'
+Traceback (most recent call last):
+  File "C:\Users\prade\AppData\Roaming\Python\Python37\site-packages\sanic\app.py", line 931, in handle_request
+    response = await response
+  File "c:\users\prade\anaconda3\lib\site-packages\rasa\core\channels\rest.py", line 101, in receive
+    sender_id = await self._extract_sender(request)
+  File "c:\users\prade\anaconda3\lib\site-packages\rasa\core\channels\rasa_chat.py", line 97, in _extract_sender
+    jwt_payload = await self._decode_bearer_token(req.args.get("token"))
+  File "c:\users\prade\anaconda3\lib\site-packages\rasa\core\channels\rasa_chat.py", line 81, in _decode_bearer_token
+    bearer_token, self.jwt_key, self.jwt_algorithm
+  File "c:\users\prade\anaconda3\lib\site-packages\rasa\core\channels\channel.py", line 178, in decode_jwt
+    authorization_header_value = bearer_token.replace(BEARER_TOKEN_PREFIX, "")
+AttributeError: 'NoneType' object has no attribute 'replace'

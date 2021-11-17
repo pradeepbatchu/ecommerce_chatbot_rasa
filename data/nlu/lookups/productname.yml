@@ -1,0 +1,166 @@
+version: "2.0"
+nlu:
+  - lookup: productname
+    examples: |
+      - A Wealth of Pigeons: A Cartoon Collection
+      - Blossom Story Book for Kids
+      - Paint by Sticker Kids: Zoo Animals: Create 10 Pictures One Sticker at a Time!
+      - No Time Like the Future: An Optimist Considers Mortality
+      - Turning Point
+      - Diary of a Wimpy Kid
+      - Go Set a Watchman
+      - do Grey
+      - Preston and Child
+      - The Girl On The Train
+      - The Miniaturist
+      - Where The Crawdads Sing
+      - The anatomy of success
+      - To Kill a Mockingbird
+      - Harry Potter and the Philosopher’s Stone
+      - The Lord of the Rings
+      - Pride and Prejudice
+      - The Diary Of A Young Girl
+      - The Book Thief
+      - The Hobbit
+      - How to Read a Book
+      - A Promised Land Hardcover
+      - 365 Adventure stories
+      - Children's Books and Their Creators
+      - The Time Machine
+      - Charlotte's Web
+      - Learning Science The Value of Crafting Engagement in Science Environments
+      - Dreams from My Father: A Story of Race and Inheritance
+      - Indian History
+      - Salt, Fat, Acid, Heat: Mastering the Elements of Good Cooking
+      - A Promised Land Hardcover
+      - The Lost Book of Adventure
+      - Science in Action
+      - Managing Information Technology Resources in Organizations in the Next Millennium
+      - Ethnic Decorative Feathers Hanging On Threads Printed
+      - Wings of Fire
+      - Breaking New Ground
+      - The Midnight Library: A Novel
+      - The Power of A Positive Attitude: Your Road To Success
+      - Prosper's Demon
+      - You are the Best Wife: A True Love Story
+      - The Arabian Nights
+      - No Time Like the Future: An Optimist Considers Mortality
+      - Atomic habits
+      - The IT in Science Book of Datalogging and Control
+      - Modern Physical Organic Chemistry
+      - Dollar Bahu
+      - Man's Search For Meaning
+      - Falling for Your Best Friend's Twin
+      - A Wealth of Pigeons: A Cartoon Collection
+      - The mythology book
+      - Draw Your Day: An Inspiring Guide to Keeping a Sketch Journal
+      - Blossom Story Book for Kids
+      - The Power of Color
+      - New honey book
+      - Social Policy and Welfare
+      - Learning Science
+      - Modern Comfort Food: A Barefoot Contessa
+      - The Boy, the Mole, the Fox and the Horse
+      - Indian Icon: A Cult Called Royal Enfield Hardcover
+      - Play Google's Game
+      - Wild Game: My Mother, Her Secret, and MeWild Game
+      - Humans
+      - GOOGLE CLASSROOM FOR TEACHERS
+      - A Time for Mercy (Jake Brigance)
+      - Jeffrey Stein
+      - Art Hurley
+      - Delmar Hoffman
+      - Elias Silva
+      - The Death and Life of Great American Cities
+      - Encyclopedia of General Science
+      - The works
+      - Falling for Your Best Friend's Twin
+      - Social Policy and Welfare
+      - Grumpy Monkey
+      - The mythology book
+      - A Wealth of Pigeons: A Cartoon Collection
+      - Draw Your Day
+      - An Inspiring Guide to Keeping a Sketch Journal
+      - Life's Amazing Secrets
+      - life's amazing secrets
+      - a wealth of pigeons: a cartoon collection
+      - blossom story book for kids
+      - paint by sticker kids: zoo animals: create 10 pictures one sticker at a time!
+      - no time like the future: an optimist considers mortality
+      - turning point
+      - diary of a wimpy kid
+      - go set a watchman
+      - grey
+      - preston and child
+      - the girl on the train
+      - the miniaturist
+      - where the crawdads sing
+      - the anatomy of success
+      - to kill a mockingbird
+      - harry potter and the philosopher’s stone
+      - the lord of the rings
+      - pride and prejudice
+      - the diary of a young girl
+      - the book thief
+      - the hobbit
+      - how to read a book
+      - a promised land hardcover
+      - 365 adventure stories
+      - children's books and their creators
+      - the time machine
+      - charlotte's web
+      - learning science the value of crafting engagement in science environments
+      - dreams from my father: a story of race and inheritance
+      - indian history
+      - salt, fat, acid, heat: mastering the elements of good cooking
+      - a promised land hardcover
+      - the lost book of adventure
+      - science in action
+      - managing information technology resources in organizations in the next millennium
+      - ethnic decorative feathers hanging on threads printed
+      - wings of fire
+      - breaking new ground
+      - the midnight library: a novel
+      - the power of a positive attitude: your road to success
+      - prosper's demon
+      - you are the best wife: a true love story
+      - the arabian nights
+      - no time like the future: an optimist considers mortality
+      - atomic habits
+      - the it in science book of datalogging and control
+      - modern physical organic chemistry
+      - dollar bahu
+      - man's search for meaning
+      - falling for your best friend's twin
+      - a wealth of pigeons: a cartoon collection
+      - the mythology book
+      - draw your day: an inspiring guide to keeping a sketch journal
+      - blossom story book for kids
+      - the power of color
+      - new honey book
+      - social policy and welfare
+      - learning science
+      - modern comfort food: a barefoot contessa
+      - the boy, the mole, the fox and the horse
+      - indian icon: a cult called royal enfield hardcover
+      - play google's game
+      - wild game: my mother, her secret, and mewild game
+      - humans
+      - google classroom for teachers
+      - a time for mercy (jake brigance)
+      - jeffrey stein
+      - art hurley
+      - delmar hoffman
+      - elias silva
+      - the death and life of great american cities
+      - the american cities
+      - encyclopedia of general science
+      - the works
+      - falling for your best friend's twin
+      - social policy and welfare
+      - grumpy monkey
+      - the mythology book
+      - a wealth of pigeons: a cartoon collection
+      - a cartoon collection
+      - draw your day
+      - an inspiring guide to keeping a sketch journal

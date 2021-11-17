@@ -1,0 +1,1015 @@
+version: "2.0"
+nlu:
+- intent: affirm
+  examples: |
+    - Accept
+    - Awesome!
+    - Great
+    - I accept
+    - I agree
+    - I am using it
+    - I changed my mind. I want to accept it
+    - I do
+    - I get it
+    - I guess so
+    - I have used it in the past
+    - I will
+    - I'd absolutely love that
+    - I'm sure I will!
+    - I'm using it
+    - Nice
+    - OK
+    - Ofcourse
+    - Oh yes
+    - Ok
+    - Ok let's start
+    - Okay
+    - Okay!
+    - PLEASE
+    - SURE
+    - Sure
+    - Sweet
+    - That would be great
+    - YES
+    - Yeah
+    - Yeah sure
+    - Yep
+    - Yep that's fine
+    - Yes
+    - Yes I do
+    - Yes please
+    - Yes please!
+    - Yes, I accept
+    - Yup
+    - a little
+    - absolutely
+    - accept
+    - accepted
+    - agreed
+    - ah ok
+    - alright
+    - amazing!
+    - awesome
+    - awesome!
+    - confirm
+    - definitely yes without a doubt
+    - done
+    - fair enough
+    - fine
+    - go
+    - go ahead
+    - go for it
+    - going super well
+    - great
+    - great lets do that
+    - great!
+    - hell yeah
+    - hell yes
+    - hm, i'd like that
+    - how nice!
+    - i accept
+    - i agree
+    - i am!
+    - i want that
+    - i will!
+    - it is ok
+    - its okay
+    - jezz
+    - k
+    - kk
+    - lets do it
+    - lets do this
+    - not bad
+    - of course
+    - ofcoure i do
+    - ofcourse
+    - oh awesome!
+    - oh cool
+    - oh super
+    - ok
+    - ok cool
+    - ok fine
+    - ok friend
+    - ok great
+    - ok i accept
+    - ok bot
+    - ok, I behave now
+    - ok, I understood
+    - ok, bot
+    - okay
+    - okay cool
+    - okay sure
+    - oki doki
+    - okie
+    - perfect
+    - please
+    - sort of
+    - sure
+    - sure thing
+    - sure!
+    - that is cool
+    - that ok
+    - that sounds fine
+    - that's great
+    - thats fine
+    - thats great
+    - well yes
+    - ya
+    - ya cool
+    - ya go for it
+    - ya i want
+    - ya please
+    - ya thats cool
+    - yaah
+    - yay
+    - ye splease
+    - yeah
+    - yeah do that
+    - yeah sure
+    - yeah, why not
+    - yeeeeezzzzz
+    - yeeees
+    - yep
+    - yep i want that
+    - yep if i have to
+    - yep please
+    - yep that's nice
+    - yep thats cool
+    - yep, will do thank you
+    - yes
+    - yes I do
+    - yes accept please
+    - yes baby
+    - yes cool
+    - yes give me information
+    - yes go ahead
+    - yes go for it
+    - yes great
+    - yes i accept
+    - yes i agree
+    - yes i have built a bot before
+    - yes i have!
+    - yes it is
+    - yes it was okay
+    - yes of course
+    - yes pleae
+    - yes please
+    - yes please!
+    - yes pls
+    - yes sirfr
+    - yes that's great
+    - yes that's what i want
+    - yes you can
+    - yes, I'd love to
+    - yes, cool
+    - yes, give me information, please
+    - yes,i am
+    - you asked me a yes or no question, which i answered with yes
+    - you got me, I accept, if you want me to
+    - considering
+    - More a less
+    - cool beans
+    - sounds good!
+    - really
+- intent: react_positive
+  examples: |
+    - Cool
+    - cool
+    - cool!
+    - HAHA
+    - I am happy
+    - LOL
+    - Lol
+    - Lol thats funny
+    - Looks nice
+    - WOW
+    - Wow
+    - You're cute.
+    - You're nice.
+    - You're really cool
+    - haha
+    - hahah
+    - hahaha
+    - happy
+    - i am feeling happy
+    - i am happy
+    - i am happy today
+    - i am very happy with your response
+    - i love you
+    - it's pretty cool
+    - love you
+    - okay  bot, you're cool
+    - your awesome
+    - that is funny
+    - thats funny
+    - today was a nice day
+    - wow
+    - you are a badass bot!
+    - you are awesome
+    - you are cool
+    - you are cool man
+    - you are funny
+    - you are my new bestfriend
+    - you seem pretty cool
+    - I like you
+    - I love you
+    - you are realy intelligent
+    - I like  
+    - hèhè
+    - like u
+    - you are so smart
+    - That's awesome.
+    - Got it
+    - I mean to say that I liked the explanation
+- intent: customer_goodbye
+  examples: |
+    - Bye
+    - Bye bye
+    - adios
+    - bye
+    - bye bot
+    - bye bye
+    - bye bye bot
+    - bye for now
+    - bye was nice talking to you
+    - bye!
+    - byee
+    - catch you later
+    - ciao
+    - cya
+    - farewell
+    - good bye
+    - good bye   bot!
+    - good night
+    - goodbye
+    - goodbye.
+    - goodnight
+    - gotta go
+    - ok Bye
+    - ok bye
+    - see u later
+    - see ya
+    - see you
+    - take care
+    - then bye
+    - talk to you later
+    - Exit
+    - Close this talk
+- intent: canthelp
+  examples: |
+    - I think you cant help me
+    - and that's it?
+    - and you call yourself bot company? pff
+    - do you get anything?
+    - exit
+    - exit now
+    - hm i don't think you can do what i want
+    - i guess you can't help me then
+    - nothing else?
+    - ok i guess you can't help me
+    - ok then you cant help me
+    - ok, but that doesnt help me
+    - stop
+    - stop go back
+    - stop this conversation
+    - that was shit, you're not helping
+    - that's not what i want
+    - this conversation is not really helpful
+    - this is leading to nothing
+    - you can't help me
+    - you can't help me with what i need
+    - you cannot help me with what I want
+    - you cant help me
+    - quit
+    - that does not help
+- intent: deny
+  examples: |
+    - I don't want to
+    - I don't want to give it to you
+    - I don't want to say
+    - I dont want to tell
+    - I'm not giving you my email address
+    - I'm not going to give it to you
+    - NO
+    - NO DON"T WANT THIS!
+    - Nah
+    - Neither
+    - Never
+    - Nevermind
+    - No
+    - No thank you
+    - No, not really.
+    - No, thank you
+    - Nope
+    - Not really
+    - absolutely not
+    - decline
+    - definitely not
+    - i decline
+    - i don not like this
+    - i don't think so
+    - i don't want either of those
+    - i don't want to
+    - i don't want to give you my email
+    - i dont want to
+    - i dont want to accept :P lol
+    - i guess it means - no
+    - i'm afraid not
+    - i'm not sure
+    - it is going pretty badly
+    - it sucks
+    - na
+    - nah
+    - nah I'm good
+    - nah not for me
+    - nah, first time
+    - nah, i'm good
+    - neither
+    - never
+    - never mind
+    - no
+    - no I dont want
+    - no I haven't decided yet if I want to sign up
+    - no and no again
+    - no bots at all
+    - no go
+    - no i can't
+    - no i don't accept
+    - no i dont want to
+    - no i dont want to accept :P lol
+    - no i won't
+    - no sir
+    - no sorry
+    - no thank s
+    - no thank you
+    - no thanks
+    - no way
+    - no you did it wrong
+    - no, i hate it
+    - no, my frst time
+    - no, thank you
+    - no, thanks
+    - no, thankyou
+    - no. u r idiot
+    - noooooooooo
+    - noooooooooooooooooooooooooooooooooooooooo
+    - nop
+    - nope
+    - nope. i am good
+    - not going well at all
+    - not really
+    - not right now
+    - not yet
+    - sorry not right now
+    - still dont want to tell
+    - thanks but no thanks
+    - this sucks
+    - very bad
+    - I do not need help installing
+    - I don't wanna tell the name of my company
+    - no stop
+    - stop it, i do not care!!!
+    - none of them
+    - I don't agree
+
+- intent: customer_greet
+  examples: |
+    - Bom dia
+    - Bonjour
+    - Good Morning
+    - Good morning
+    - Guten Morgen
+    - HELLO
+    - HEY
+    - HEllo
+    - HI
+    - HI bot
+    - Hallo
+    - Hei
+    - Hellllooooooo
+    - Hello
+    - Hello Bot
+    - Hello  
+    - Hello bot
+    - Hello bot
+    - Hello!
+    - Hey
+    - Hey bot
+    - Hey bot
+    - Heya
+    - Heylo
+    - Hi
+    - Hi bot
+    - Hi bot!
+    - Hi bot
+    - Hi man  
+    - Hi bot
+    - Hi bot..
+    - Hi there
+    - Hi, bot
+    - Hieee
+    - Hieeeeeeeeeeeee
+    - Hola
+    - I said, hellllllooooo
+    - Well hello there
+    - What is up?
+    - Whats up
+    - Whats up my bot
+    - Whats up?
+    - ayyyy whaddup
+    - bonjour
+    - ey boss
+    - good evening
+    - good moring
+    - good morning
+    - greet
+    - greetings
+    - hai
+    - hallo
+    - hallo bot
+    - halloo
+    - halloooo
+    - halo
+    - halo bot
+    - heeey
+    - hellio
+    - hello
+    - hello bot
+    - hello everybody
+    - hello friend
+    - hello is anybody there
+    - hello it is me again
+    - hello robot
+    - hello bot
+    - hello sweatheart
+    - hello sweet boy
+    - hello there
+    - hey bot
+    - hey bot!
+    - hey dude
+    - hey hey
+    - hey let's talk
+    - hey  
+    - hey bot
+    - hey ther
+    - hey there
+    - hey there boy
+    - hey there..
+    - hey, let's talk
+    - hey, bot!
+    - hi
+    - hi Mister
+    - hi again
+    - hi can you speak ?
+    - hi friend 
+    - hi pal!
+    - hi bot
+    - hi there
+    - hi there it's me
+    - hi!
+    - hi?
+    - hieee
+    - hola
+    - howdy
+    - konichiwa
+    - merhaba
+    - ola bot
+    - salut
+    - sup
+    - wasssup
+    - wasssup!
+    - what up
+    - whats up
+    - yo
+    - ssup?
+
+- intent: react_negative
+  examples: |
+    - I am feeling bad
+    - I am sad
+    - I am super sad
+    - I'm sad
+    - I'm super sad
+    - Now I'm sad
+    - This is bad
+    - You are quite bad
+    - bad
+    - documentation of is very bad
+    - i am angry over you
+    - i am feel sad
+    - i am sad
+    - i am sad about that
+    - i am very sad
+    - i feel sad
+    - i sad
+    - i'm sad
+    - sad
+    - so sad
+    - so sad
+    - super sad
+    - u broke my heart
+    - very very sad
+    - you are bad
+    - you are bad bot
+    - you make me sad
+    - You are mad
+    - You are rude
+    - bots are bad
+    - i don't care!!!!
+    - i dont like bots
+    - this is a really frustrating experience
+    - you're rather dull
+    - i am so worry
+    - i will leave
+    - Although I understand your still in development, I feel a little bit disappointed.
+    - Surely you're not so smart lik i thought
+    - iam not feeling good
+    - not good
+    - Thats so rude
+    - That tool here isnt good
+    - boring
+- intent: customer_end_conversation
+  examples: |
+    - Cool. Thanks
+    - Great, thanks
+    - Thank you
+    - Thank you bot
+    - Thank you so much
+    - Thanks
+    - Thanks bot
+    - Thanks for that
+    - Thanks!
+    - amazing, thanks
+    - cheers
+    - cheers bro
+    - cool thank you
+    - cool thanks
+    - cool, thanks
+    - danke
+    - great thanks
+    - ok thanks
+    - ok thanks bot
+    - ok thanks!
+    - perfect thank you
+    - thank u
+    - thank you
+    - thank you anyways
+    - thanks
+    - thanks a bunch for everything
+    - thanks a lot
+    - thanks for forum link, I'll check it out
+    - thanks for the help
+    - thanks this is great news
+    - thanks you
+    - thanks!
+    - thankyou
+    - thnks
+    - thx
+    - yes thanks
+    - thanks for your information
+    - No, I got my answer
+- intent: customer_help
+  examples: |
+    - I have a question
+    - I have a question about 
+    - I have a question about the functioning of the device
+    - I have a question for you
+    - I have a question.
+    - hello I have a question
+    - I have a question?
+    - Sure. I have a question for you
+    - Yes, I have a question
+    - yes, I have a question
+    - I am stuck and I need help
+    - I have a few questions
+    - help  
+    - help me
+    - what can you do
+    - Yes, I have another query
+    - i have another query
+    - query
+    - enquiry
+    - help required
+    - required information
+    
+- intent: chitchat/greet
+  examples: |
+    - Are you ok?
+    - Do you feel good?
+    - Do you have a great day?
+    - HI bot, what are you up to?
+    - Hi bot! How are you?
+    - How are You?
+    - How are things?
+    - How are you
+    - How are you man?
+    - How are you today?
+    - How are you?
+    - How was your day?
+    - How you doing?
+    - How's it going
+    - How's it hanging?
+    - How's life treating you friend?
+    - How've you been?
+    - Hows it going
+    - Is everything ok?
+    - What's going on?
+    - What's new?
+    - What's up
+    - What's up man
+    - are you alright
+    - are you happy
+    - are you having a good day
+    - are you ok
+    - are you okay
+    - h r u ?
+    - hello, how are you?
+    - hey how are you?
+    - hi how are you?
+    - hi how u doing
+    - hi bot, how are you?
+    - how ?
+    - how are things going
+    - how are things with you?
+    - how are u
+    - how are u?
+    - how are xou
+    - how are you
+    - how are you ?
+    - how are you doing
+    - how are you doing this morning
+    - how are you doing today my sweet friend
+    - how are you doing today?
+    - how are you doing?
+    - how are you feeling
+    - how are you today
+    - how are you'
+    - how are you?
+    - how are you????
+    - how are yuo
+    - how do you do?
+    - how have you been
+    - how is it going
+    - how is your day
+    - how is your day going
+    - how is your evening
+    - how r u
+    - how r u ?
+    - how you doing
+    - how you doing?
+    - how's it going?
+    - how's life
+    - how's life been treating you?
+    - how's your day going
+    - howareyou
+    - hw r u?
+    - is everything all right
+    - is everything okay
+    - nah, I'm good - how are you doing?
+    - okay hi how are you?
+    - wassup
+    - what about your day
+    - what are you up to?
+    - what's good
+    - what's up
+    - what's up bot
+    - what's up?
+    - whatchcha doing
+    - whatchya upto ?
+    - whats goin on
+    - whats new
+    - whatsapp
+    - yow are you
+    - how are you bot
+    - Hey bot, how's it going
+    - are you cool
+- intent: chitchat/ask_isbot
+  examples: |
+    - Ar you a bot ?
+    - Are you a bot
+    - Are you a chat bot?
+    - Are you the bot?
+    - Hi there, are you the bot?
+    - are you a BOT
+    - are you a bot
+    - are you a bot ?
+    - are you a bot?
+    - are you a chatbot
+    - are you a bot bot?
+    - are you a real bot?
+    - are you a robot
+    - are you ai
+    - are you artificial
+    - are you artificial intelligence
+    - are you bot
+    - are you bot?
+    - are you bot bot?
+    - are you real
+    - are you real lol
+    - are you really a bot
+    - are you robot
+    - are you sure that you're a bot?
+    - bot?
+    - cuz you are a bot
+    - i guess you are a chatbot
+    - oh are you chatbot?
+    - tell me, are you a bot?
+    - what are you, a bot?
+    - you are a robot
+    - you are ai
+    - you are chatbot
+    - you're a bot
+    - you robo
+    - real bot then?
+    - are you really a bbot?
+
+- intent: chitchat/ask_languagesbot
+  examples: |
+    - Are you familiar with more than one language?
+    - Can you communicate in any other languages?
+    - Can you speak more than one language?
+    - Do you know any other languages?
+    - Do you know other languages?
+    - Do you speak [german](language)?
+    - Do you speak any other languages?
+    - Do you understand [spanish](language)?
+    - How many different languages are you fluent in?
+    - How many languages are you familiar with?
+    - How many languages can you speak?
+    - How many languages do you have knowledge of?
+    - How many languages do you know?
+    - In what languages are you fluent enough?
+    - In which languages are you fluent?
+    - In which languages can you speak?
+    - Speak any other languages?
+    - What are all of the different languages you can speak?
+    - What are the languages you can speak?
+    - What do you speak?
+    - What languages are you fluent in?
+    - What languages can you communicate in?
+    - What languages can you converse in?
+    - What languages can you use?
+    - What languages do you know how to use?
+    - What languages do you know?
+    - What languages do you speak?
+    - Which languages are you familiar with?
+    - Which languages do you speak?
+    - are you bilingual?
+    - are you multilingual?
+    - can you speak [Spanish](language)?
+    - can you speak in [italian](language)?
+    - do you know [chinese](language)
+    - do you speak [dutch](language)?
+    - do you speak [german](language)?
+    - do you speak any other languages?
+    - how many languages are you fluent in?
+    - how many languages do you know?
+    - tell me some languages you know?
+    - what else do you know besides [English](language)?
+    - what foreign languages are you fluent in?
+    - what foreign languages do you know?
+    - what language do you use
+    - what languages are you comfortable speaking at?
+    - what languages are you familiar with?
+    - what languages are you good at speaking?
+    - what languages do you know?
+    - what languages do you speak
+    - what languages you are well versed ?
+    - what languages you can be comfortable speaking?
+    - what languages you can handle well?
+    - what languages you can speak ?
+    - what languages you know?
+    - what languages you prefer more speaking at?
+    - which languages do you understand?
+    - you know [French](language)
+    - you speak [french](language) ?
+    - I want to speak binary with you
+    - ARE YOU [SPANISH](language)
+    - we cant converse in [french](language)?
+    - can we converse in [french](language)?
+    - Do you speak [italian](language)?
+
+
+- intent: chitchat/ask_whatismyname
+  examples: |
+    - Can you tell me my name?
+    - Can you tell me what I am called?
+    - Do I have a name?
+    - Do I have a name? What is it?
+    - Do you know my name?
+    - Do you know what my name is?
+    - Explain my name to me.
+    - I have a name, what is it?
+    - I'd like to know my name
+    - I'd like to know what my name is
+    - Inform me what my name is
+    - May i know my name?
+    - Please let me know what my name is
+    - Say my name.
+    - Tell me my name
+    - What am I called?
+    - What could be my name?
+    - What did my parents name me?
+    - What do I call myself?
+    - What do my colleagues call me?
+    - What do people call me?
+    - What does everyone call me?
+    - What else do people call me?
+    - What exactly is my name?
+    - What is my first name?
+    - What is my full name?
+    - What is my name?
+    - What is the name I was given?
+    - What name do I go by?
+    - What name should I recognize for myself?
+    - What was I named?
+    - What would be the name on my tombstone?
+    - can you tell me my name?
+    - what is my name
+    - what is my name?
+    - what's my name?
+- intent: chitchat/ask_whatisbot
+  examples: |
+    - Can you brief me about bot
+    - Can you tell me more about bot?
+    - Can you tell me what bot does?
+    - Could you tell me more about bot?
+    - Give me more information about bot
+    - How does bot work?
+    - I want to know about rsa
+    - I want to know what bot actually does that isn't clear to me yet
+    - I want to learn what bot does
+    - I want to learn what bot is
+    - I would like to know about bot
+    - I would like to know more about your product
+    - OK can u brief me Abt bot
+    - bot?
+    - bot Is?
+    - WHAT IS IT
+    - WHAT IS bot
+    - What Is bot?
+    - What can bot do?
+    - What components does bot have?
+    - What do you do as a company?
+    - What do you do at bot?
+    - What does bot build?
+    - What does bot do?
+    - What does bot make?
+    - What does bot do exactly?
+    - What exactly is bot?
+    - What is bot?
+    - What is bot doing exactly?
+    - What is bot?
+    - What is the bot Stack?
+    - What's bot?
+    - can you explain bot?
+    - can you pls explain what bot does
+    - could you tell me more about bot
+    - explain me what bot does
+    - explain me what bot is
+    - how does bot work?
+    - how does bot work
+    - how does bot work?
+    - how bot works ?
+    - how works bot
+    - i dont get what bot is
+    - i havent understood yet what bot actually is
+    - i want to about bot
+    - i want to know about bot
+    - i want to know what bot does
+    - i want to learn something about bot
+    - so how does it all work?
+    - sorry tell me about bot
+    - tell me about bot
+    - tell me bout bot
+    - tell me more about bot
+    - tell me more about your company
+    - what are the componensts of bot
+    - what can I do with bot?
+    - what can i build with bot ?
+    - what can i do with bot
+    - what do you guys do at bot
+    - what does bot do
+    - what does bot do ?
+    - what does bot do?
+    - what does bot mean
+    - what is in bot
+    - what is it for?
+    - what is bot
+    - what is bot actually
+    - what is bot?
+    - whats bot
+    - yeah go on explaining what bot is
+    - what are the components of bot
+    - bot IS SOFTWARE?
+    - what is bot
+    - who are you?
+    - what is you name?
+- intent: chitchat/ask_whatspossible
+  examples: |
+    - Can you explain me in one sentence what you are doing?
+    - Can you help me?
+    - Could you please show me what you can
+    - Great, is there anything else you can do, bot?
+    - How can you help me
+    - How you help me?
+    - I need help
+    - I need some help
+    - What are my options
+    - What are you able to do?
+    - What can I ask you?
+    - What can I do?
+    - What can you demo
+    - What can you do
+    - What can you do for me?
+    - What can you do?
+    - What can you tell me?
+    - What do you do
+    - anything els
+    - are there any other options?
+    - can I ask you anything else?
+    - can you do anything else?
+    - can you help me
+    - can you help me?
+    - come back
+    - cool! can I do something else here?
+    - hello what can you do for me
+    - help
+    - help me
+    - help please
+    - help pls
+    - help?
+    - hep me
+    - hi. bot what do you do?
+    - hm that doesnt quite help me is there anything else you can do?
+    - how can i use you
+    - how can you help me
+    - how can you help me?
+    - how can you help?
+    - how does this work?
+    - how u can help me
+    - how you help me
+    - i asked you if you can do anything else
+    - i don't know what i want
+    - i need help
+    - more info
+    - now what?
+    - options
+    - show me the menu
+    - show me what's possible
+    - so now what
+    - so what can you do
+    - so what can you do?
+    - so what can you help me with?
+    - so what next?
+    - talk to me
+    - talk to me!
+    - tell me something you can do
+    - tell me what's your skill
+    - um what now
+    - what are all the things you understand?
+    - what are the options?
+    - what are you ding
+    - what are you doing
+    - what are you good at?
+    - what can I ask ?
+    - what can I ask you?
+    - what can I do here
+    - what can I do with bot?
+    - what can I do with this bot
+    - what can i do here
+    - what can i do now
+    - what can u do
+    - what can we talk about?
+    - what can you answer
+    - what can you do
+    - what can you do for me
+    - what can you do, bot?
+    - what can you do?
+    - what can you offer me?
+    - what can you tell me
+    - what can you?
+    - what cn u do for me ?
+    - what do you do
+    - what do you do?
+    - what do you know except this?
+    - what else can I do here?
+    - what else can i do
+    - what else can i do?
+    - what else can you do?
+    - what else can you help with?
+    - what i have to do
+    - what is this bot for
+    - what u can do
+    - what u can do?
+    - what you can do
+    - what you can do for me?
+    - what you can do?
+    - what you do
+    - what you doing?
+    - what you talk about?
+    - you can hep me
+    - what can you teache me?
+    - Can bot do calculations?
+    - what you can
+   

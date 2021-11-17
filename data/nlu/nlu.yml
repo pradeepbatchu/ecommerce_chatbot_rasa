@@ -1,0 +1,112 @@
+version: "2.0"
+nlu:
+  - intent: products_list
+    examples: |
+      - Find products
+      - show products
+      - show products
+      - show products list
+      - products list
+      - lets shop
+      - display all products
+      - products on sale
+      - Shop Online
+      - shop online
+      - Shopping online
+      - lets shop
+
+  - intent: customer_contact
+    examples: |
+      - Contact Us
+      - contact us
+      - reach me
+      - Reach me
+      - talk to me
+      - Talk to me
+      - Find us
+      - find us
+      - talk to us
+      - Talk to us
+      - reach us
+      - Reach us
+      - human agent
+      - can you tranfer me to human agent
+      - talk to real agent
+
+  - intent: conversation_continue
+    examples: |
+      - further query
+      - further questions
+      - continue conversation
+      - continue
+
+  - intent: customer_shop_by_categories
+    examples: |
+      - products by categories
+      - products by categories
+      - shop by Categories list
+      - shop by Categories list
+      - categories list
+      - categories
+      - show category
+      - category
+  - intent: shop_by_category
+    examples: |
+      - [electronics]{"entity":"category","value":"Electronics"}
+      - [jewelery]{"entity":"category","value":"Jewelery"}
+      - [men's clothing]{"entity":"category","value":"men's clothing"}
+      - [women's clothing]{"entity":"category","value":"women's clothing"}
+    
+  - intent: customer_menu
+    examples: |
+      - menu
+      - Menu
+      - show menu
+      - show me menu
+      - show Menu
+      - show me things
+      - what can you do for me
+      - capabilities
+      - your capabilities
+      - show me what you can do
+      - show me
+
+
+  - intent: bot_challenge
+    examples: |
+      - are you a bot?
+      - are you a human?
+      - am I talking to human?
+      - let have cup of tea
+      - asjdkjad asdljalsdjka sd
+      - alksjdlkjasd asldjlajksdasd
+      - akjdsjlasdlkjasdk asdasd
+      - qweqweqweqeoquiweoiqwe
+      - asdlkasjdkljasd
+      - zxmcnbzmxcbmzbxcb
+      - 1238798172398719237981723987189273
+      - qweasdjaj&%%&^%&^!!@U!@(#(!*&@#(*&!(*@&#
+
+  - intent: feedback
+    examples: |
+      - Excellent
+      - excellent
+      - excellent
+      - Poor
+      - poor
+      - poor
+      - Good
+      - Good
+      - good
+      - Average
+      - Average
+      - average
+            
+  - intent: outofdomain
+    examples: |
+      - i am waiting
+      - i need travel ticket toreimbursement the same
+      - i can set up new recurring orders
+      - please check that problem
+      
+      

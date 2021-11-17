@@ -1,0 +1,68 @@
+version: "2.0"
+rules:
+  - rule: Ask user to rephrase the query whenever user sends a query with low NLU confidence 
+    steps:
+      - intent: nlu_fallback
+      - action: utter_default
+      
+  - rule: Ask user to rephrase the query whenever user search for product name with wrong title
+    steps:
+      - intent: nlu_fallback
+      - action: utter_default
+      
+  - rule: greet user whenever user greets the bot
+    steps:
+      - intent: customer_greet
+      - action: utter_customer_greet
+      
+  - rule: Ask user to share the feedback when user ends search query
+    steps:
+      - intent: customer_end_conversation
+      - action: utter_customer_end_conversation
+      
+  - rule: Say goodbye anytime when user says goodbye
+    steps:
+      - intent: customer_goodbye
+      - action: utter_customer_bye
+      
+  - rule: Ask user to rephrase the query whenever user search with inappropriate query
+    steps:
+      - intent: bot_challenge
+      - action: utter_default
+
+  - rule: affirm
+    steps:
+      - intent: affirm
+      - action: utter_ask_affirm
+      
+  - rule: Response with a chitchat utterance whenever user indulges in some chitchat
+    steps:
+      - intent: chitchat
+      - action: utter_chitchat
+
+  - rule: action_feedback
+    steps:
+    - intent: feedback
+    - action: action_feedback
+
+  - rule: Respond with customer_contact whenever user enquire about contact details
+    steps:
+    - intent: customer_contact
+    - action: utter_customer_contact
+
+  - rule: Respond with  products list whenever user search or query for products list
+    steps:
+      - intent: products_list
+      - action: action_product
+
+  - rule: customer_shop_by_categories
+    steps:
+    - intent: customer_shop_by_categories
+    - action: action_categories_list
+    
+  - rule: react_negative
+    steps:
+    - intent: react_negative
+    - action: utter_canthelp
+    
+  

@@ -1,0 +1,223 @@
+version: "2.0"
+
+intents:
+  - customer_shop
+  - out_of_scope
+  - action_product_search:
+      use_entities:
+        - productname
+  - products_list
+  - customer_greet
+  - react_negative
+  - react_positive
+  - customer_contact
+  - customer_bye
+  - customer_help
+  - customer_goodbye
+  - bot_challenge
+  - affirm
+  - feedback
+  - customer_end_conversation
+  - customer_menu
+  - customer_shop_by_categories
+  - conversation_continue
+  - thank_you
+  
+entities:
+  - name
+  - purchaseorder
+  - productname
+  - shop
+  - category
+  - language
+  - price
+  - time
+  - number
+  - more_less
+  - author_name
+  - first_name
+  - last_name
+  - address
+  - city
+  - state
+  - country
+  - postal_code
+  - phone_number
+  - year
+  - umsession
+  - dcsession
+slots:
+  more_less:
+    type: text
+  time:
+    type: text
+  price:
+    type: text
+  author_name:
+    type: text
+  productname:
+    type: text
+  user:
+    type: text
+  feedback:
+    type: text
+  medium:
+    type: text
+  limit:
+    type: text
+  name:
+    type: text
+  purchaseorder:
+    type: text
+  orderid:
+    type: text
+  category:
+    type: text
+  product:
+    type: text
+  skip:
+    type: text
+  umsession:
+    type: text
+  dcsession:
+    type: text
+  number:
+    type: text
+  language:
+    type: categorical
+    values:
+      - english
+  first_name:
+    type: text
+  last_name:
+    type: text
+  address:
+    type: text
+  state:
+    type: text
+  city:
+    type: text
+  country:
+    type: text
+  postal_code:
+    type: text
+  phone_number:
+    type: text
+  year:
+    type: text
+responses:
+  utter_customer_greet:
+  - text: Good to see you! below are quick links for you
+    buttons:
+    - title: Shop By Categories
+      payload: /action_customer_product
+    - title: Show Products
+      payload: /action_customer_product
+    - title: Contact Us
+      payload: /action_customer_product
+  utter_customer_contact:
+  - text: You can reach us on (012)1290 678 or write to us on info@mystore.co.in
+  utter_customer_bye:
+  - text: Goodbye!
+  - text: Bye!
+  - text: Ciao!
+  - text: Bye, was nice talking to you!
+  - text: Bye bye!
+  utter_default:
+  - text: Sorry, I didn't understand! Can you rephrase again?
+  - text: Didn't understand what you said. Can you rephrase again?
+  utter_ask_affirm:
+  - text: okay
+  utter_ask_rephrase:
+  - text: Can you please rephrase again?
+  utter_customer_help:
+  - text: |
+      please select your search item of interest
+    buttons:
+    - title: Show Products
+      payload: /action_customer_product
+    - title: Shop By Categories
+      payload: /customer_shop_by_categories
+    - title: Contact Us
+      payload: /customer_contact
+
+  utter_chitchat:
+  - text: |
+      Yep, I am"
+  - text: |
+      I am indeed a search bot.
+  utter_out_of_scope/non_english:
+  - text: I only understand/speak English, I'm sorry.
+  utter_out_of_scope/other:
+  - text: "I can't help you with that, I'm sorry."
+  utter_out_of_scope:
+  - text: |
+      I'm your information chat assistant. I can help in finding best products of your interest.
+    buttons:
+    - title: Show Products
+      payload: /action_customer_product
+    - title: Shop By Categories
+      payload: /customer_shop_by_categories
+    - title: Contact Us
+      payload: /customer_contact
+  utter_react_negative:
+  - text: 😕
+  - text: 😞
+  - text: 😥
+  - text: 😢
+  utter_react_positive:
+  - text: 😄
+  - text: 😊
+  - text: 👏
+  - text: 😍
+  utter_canthelp:
+  - text:  |
+      I'm sorry I couldn't help you, I can help you on below things
+    buttons:
+    - title: Show Products
+      payload: /action_customer_product
+    - title: Shop By Categories
+      payload: /customer_shop_by_categories
+    - title: Contact Us
+      payload: /customer_contact
+  utter_customer_end_conversation:
+  - text: |
+      Please share your valuable feedback with us.
+    buttons:
+    - title: Excellent
+      payload: /excellent
+    - title: Good
+      payload: /good
+    - title: Average
+      payload: /average
+    - title: Poor
+      payload: /poor
+  utter_conversation_continue:
+  - text: |
+      Is there any thing else I can help with?
+    buttons:
+      - title: No, I got my answer
+        payload: /customer_end_conversation
+      - title: Yes, I have another query
+        payload: /customer_help
+  utter_thank_you:
+  - text: |
+      Thank you!
+  utter_thumbsup:
+    - text: |
+        glad it helped
+
+
+actions:
+  - action_greet
+  - action_product
+  - action_store_location
+  - action_default_fallback
+  - action_feedback
+  - action_categories_list
+  - action_shop_by_category
+  - utter_out_of_scope
+  
+session_config:
+  session_expiration_time: 60  # value in minutes
+  carry_over_slots_to_new_session: true

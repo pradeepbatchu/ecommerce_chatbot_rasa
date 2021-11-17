@@ -1,0 +1,47 @@
+#### This file contains tests to evaluate that your bot behaves as expected.
+#### If you want to learn more, please see the docs: https://rasa.com/docs/rasa/testing-your-assistant
+
+stories:
+- story: happy path 1
+  steps:
+  - user: |
+      hello there!
+    intent: customer_greet
+  - action: action_greet
+  - user: |
+      Show Products
+    intent: products_list
+  - action: action_product
+
+- story: action_feedback
+  steps:
+  - user: |
+      Good
+    intent: feedback
+  - action: action_feedback
+ 
+  
+- story: say goodbye
+  steps:
+  - user: |
+      bye-bye!
+    intent: customer_goodbye
+  - action: utter_customer_bye
+
+- story: bot challenge
+  steps:
+  - user: |
+      are you a bot?
+    intent: bot_challenge
+  - action: utter_default
+  
+  
+- story: customer_contact
+  steps:
+  - user: |
+      contact us
+    intent: customer_contact
+  - action: utter_customer_contact
+
+  
+  

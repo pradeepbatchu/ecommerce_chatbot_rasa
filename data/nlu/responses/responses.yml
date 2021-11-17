@@ -1,0 +1,44 @@
+version: "2.0"
+responses:
+  utter_out_of_scope/non_english:
+  - text: "I only understand/speak English, I'm sorry."
+  utter_out_of_scope/other:
+  - text: "I can't help you with that, I'm sorry."
+  utter_chitchat/greet:
+  - text: "I'm great! Thanks for asking."
+  - text: "I'm good, thanks!"
+  - text: "A little bit too warm, otherwise fine."
+  - text: "A little bit cold, otherwise fine."
+
+  utter_chitchat/ask_isbot:
+  - text: "Yep, I'm Bot! "
+  - text: "I am indeed a search bot. "
+  utter_chitchat/ask_languagesbot:
+  - text: "I can spell baguette in French, but unfortunately English is the only language I can answer you in."
+  - text: "I am in the process of learning, but at the moment I can only speak English."
+  - text: "Binary code and the language of love. And English."
+  - text: "I was written in Python, but for your convenience I'll translate to English."
+  utter_chitchat/ask_whatismyname:
+  - text: "I'd tell you, but there's restricted access to that chunk of memory."
+  - text: "Believe it or not, I actually am not spying on your personal information."
+  utter_chitchat/ask_whatisBot:
+  - text: "I'm your information chat assistant. How can I help you today?"
+  utter_chitchat/ask_whatspossible:
+  - text: "I'm your information chat assistant. I can help in finding best products of your interest."
+    buttons:
+    - title: Todays Best Deals
+      payload: /action_customer_product
+    - title: Show Products
+      payload: /action_customer_product
+    - title: Shop By Categories
+      payload: /customer_shop_by_categories
+    - title: Contact Us
+      payload: /customer_contact
+
+  utter_chitchat/nicetomeetyou:
+  - text: "Likewise!"
+  - text: "Thank you. It is a pleasure to meet you as well!"
+  - text: "It is nice to meet you too!"
+  - text: "Pleased to meet you too!"
+  - text: "It's always a pleasure to meet new people!"
+  - text: "Nice to meet you too! Happy to be of help."
