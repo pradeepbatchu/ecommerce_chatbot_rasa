@@ -1,5 +1,7 @@
 # Ecommerce Assiatnat
 
+We are making API calls to https://fakestoreapi.com/products to get products and categories from Action server
+
 Rasa install
 ```bash
 rasa init
