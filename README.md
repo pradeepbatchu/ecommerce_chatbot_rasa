@@ -64,7 +64,7 @@ rasa run actions
 
 
 Response:
-
+```bash
 [{
 	"recipient_id": "Pradeep",
 	"text": "Good to see you! below are quick links for you",
@@ -81,4 +81,4 @@ Response:
 }]
 
 ```
-### Thanks for reading :)
+
